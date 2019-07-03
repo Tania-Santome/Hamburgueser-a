@@ -47,7 +47,7 @@ img {
 }
 
 
-/*cabecera_____________cabecera_____________*/
+/*comienzo__de__cabecera_____________cabecera_____________*/
 
 
 header .submenu {
@@ -131,6 +131,65 @@ header nav li .activo {
 
 header.hamburguesa {
 	display: none;
+}
+
+/*______________hero___________________________*/
+
+.hero {
+
+	background-image: url("../images/fondo.jpg");
+	background-size: cover;
+	background-position: center center;
+	background-color: #444;
+	background-blend-mode: soft-light;
+	height: 550px;
+}
+
+.hero > div /*esto es un hijo directo*/ {
+  padding: 15% 10%;
+  color: white;
+
+}
+
+.hero > div h1 {
+
+font-size: 2em;
+font-family: "handlee", cursive;
+
+}
+
+.hero > div h2 {
+
+	color:#fa573a;
+	font-size: 1.25em;
+	margin: 0.8em 0%;
+}
+
+.hero .boton {
+
+	background-color: #fa573a;
+	border: 2px solid #fa573a;
+	padding: .9em;
+	display: inline-block;
+	margin: .8em 0%;
+}
+
+.hero .boton:hover {
+
+	background: transparent;
+	color: #fa573a
+}
+
+
+.hero .social {
+	display: flex;
+
+}
+
+.hero .social li {
+
+	margin-right: .7em;
+	font-size: 1.5em;
 }
 
 
@@ -219,6 +278,11 @@ header nav .menu li{
 }
 header nav .menu li:last-child {
 	border-bottom: 0px;
+}
+
+.hero {
+
+	height: 450px;
 }
 
 }
