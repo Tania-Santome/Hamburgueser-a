@@ -191,6 +191,115 @@ font-family: "handlee", cursive;
 	margin-right: .7em;
 	font-size: 1.5em;
 }
+/*_______fin hero_______________________
+______comenzamos MAIN___________________________________________*/
+
+section {
+
+	padding: 50px 0px;
+
+}
+
+main section h2  {
+
+	color: black;
+	font-family: "handlee", cursive;
+	text-align: center;
+	font-size: 2em;
+
+
+}
+
+main section h2 span {
+
+	color: #fa573a;
+}
+
+main section .underlines {
+
+	position: relative;
+	width: 9.375em;
+	margin: 0 auto;
+	color: #fa573a;
+}
+
+main section .underlines hr {
+
+	border-color: #fa573a;
+}
+
+section .underlines span {
+	display: block;
+	font-weight: bold;
+	position: absolute;
+	top: -6px;
+	left: 67px;
+
+}
+
+main section .flex {
+
+	display: flex;
+	flex-wrap: wrap;  	 /* con wrap hay que especificar medidas*/
+	margin-top: 50px;
+
+
+}
+
+
+main section .flex article {
+
+	width: 33%;
+	border-left: 1px solid #ccc;
+	padding: 0px 25px;
+}
+
+main #ourservices article .icon {
+
+	color: #fa573a;
+	border: 2px solid #fa573a;
+	padding: 15px;
+}
+
+main #ourservices article h3 {
+
+	font-weight: bold;
+	margin: 10px 0px;
+	font-size: 15px 0px 120%;
+
+}
+
+main #ourservices article p {
+
+	color: #aaa ;
+}
+
+
+main .enlace{
+
+	color: #fa573a;
+	font-weight: bold;
+	margin: 20px 0px 0px 0px;
+	display: inline-block; /* como "a" es un elemento en linea, para ponerlo en bloque hay que variar el display de esta manera,
+	si no, no es posible meterle un margen, el margen es solo para elementos en bloque, nunca en linea*/
+
+}
+
+main .enlace i{ /*vuelta*/
+
+	margin-left: 0px;
+	transition: 1s;
+
+}
+
+main .enlace:hover i {  /*ida*/
+
+	margin-left: 5px;
+	transform: translate(10px);
+	
+}
+
+
 
 
 
@@ -200,7 +309,7 @@ _________________________________________________________________________*/
 
 
 
-@media all and (max-width: 778px) {
+@media(max-width: 768px) {
 
 header .submenu .row  div  {
 
@@ -213,8 +322,21 @@ header .submenu .row div:nth-child(3), header .submenu .row div:nth-child(4) {
 text-align: center; 
 
 }
-}
 
+main section .flex article {
+	width: 50%;
+	margin-bottom: 40px;
+}
+main section .flex article:last-child{
+	width: 100%;
+	margin-bottom: 40px;
+
+}
+main section .flex article:first-child, main section .flex article:last-child {
+	border-left: 0px;
+
+}
+}
 
 
 
@@ -229,7 +351,7 @@ o  header .submenu .row div span span, header submenu .row div a span  ((PONER C
 
 
 
-@media all and (max-width: 600px) {
+@media (max-width: 600px) {
 	
 header .submenu .row {
 
@@ -284,6 +406,15 @@ header nav .menu li:last-child {
 
 	height: 450px;
 }
+
+main section .flex article {
+	width: 100%;
+	border-left: 0px;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 20px;
+}
+
+
 
 }
  
