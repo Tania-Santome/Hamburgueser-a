@@ -26,6 +26,12 @@ a {
 	text-decoration: none;
 }
 
+img {
+	width: 100%;
+	height: auto;
+	
+}
+
 .row {
 
 	max-width: 1100px;
@@ -39,7 +45,9 @@ a {
 	height: 0;
 	clear: both;
 }
-/*cabezera_____________*/
+
+
+/*cabecera_____________cabecera_____________*/
 
 
 header .submenu {
@@ -73,7 +81,63 @@ text-align: right;
 }
 
 
-/*mediaquery____________________________________________________________*/
+/*______________________________menu header_______________________________________*/
+
+header nav {
+	background-color: white;
+	padding: 20px 0px;
+
+
+}
+
+header nav .logo{
+
+	width: 100px;
+	height: auto;
+	float: left;
+}
+
+header nav .menu {
+
+	float: right;
+	padding-top: 5px;
+
+
+}
+
+header nav .menu li {
+
+	display: inline-block;
+	margin-right: 15px;
+}
+
+header nav li a {
+
+	color:#666;
+}
+
+header nav li a:hover {
+
+	color:#fa573a;
+}
+
+
+header nav li .activo {
+	color:#fa573a;
+
+
+}
+
+
+header.hamburguesa {
+	display: none;
+}
+
+
+
+
+/*mediaquery____________________________________________________________
+_________________________________________________________________________*/
 
 
 
@@ -92,6 +156,13 @@ text-align: center;
 }
 }
 
+
+
+
+
+
+
+
 /*  header submenu row div font size 85% 
 
 o  header .submenu .row div span span, header submenu .row div a span  ((PONER COMAS Y SEPARAR SE PUEDE))
@@ -100,7 +171,8 @@ o  header .submenu .row div span span, header submenu .row div a span  ((PONER C
 
 
 @media all and (max-width: 600px) {
-	header .submenu .row {
+	
+header .submenu .row {
 
 	padding: 10px 0px;
     font-size: 30px;
@@ -111,14 +183,49 @@ o  header .submenu .row div span span, header submenu .row div a span  ((PONER C
  	/* font-size: 0px; */  display:none;
 
  }
+ header nav {
+
+ 	padding-left: 10px;
+ 	padding-right: 10px;
+ }
+
+header .hamburguesa {
+	display: block;
+	float: right;
+	cursor: pointer;
+}
+
+header .hamburguesa .linea {
+
+	border-top: 2px solid #aaa;
+    width:  30px;
+    margin-bottom: 10px;
 
 
+}
+
+header nav .menu {
+	float:none;
+	padding-top: 60px;
+}
+
+header nav .menu li{
+  
+   display: block;
+   text-align: center;
+   padding: 20px;
+   border-bottom: 1px solid #aaa;
+
+}
+header nav .menu li:last-child {
+	border-bottom: 0px;
+}
 
 }
  
 
 
-/* dos puntos de corte, uno más pequeño; otro solo con los iconos
+/* DEBERES 2 JULIO:  dos puntos de corte, uno más pequeño; otro solo con los iconos
 las mediaquerys son 778 para tabla bajo tamaño fuente, y 600 para quitarle el texto y dejar colo el icono*/
 
 
