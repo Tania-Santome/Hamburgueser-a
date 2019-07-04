@@ -1,0 +1,429 @@
+@import url('reset.css');
+@import url('https://fonts.googleapis.com/css?family=Handlee|Montserrat:400,700&display=swap');
+
+
+* {
+
+	box-sizing: border-box;
+}
+
+body {
+
+	font-family: Montserrat, sans-serif;
+}
+
+
+.container-fluid {
+
+	width: 100%;
+}
+
+
+
+a {
+
+	color: inherit;
+	text-decoration: none;
+}
+
+img {
+	width: 100%;
+	height: auto;
+	
+}
+
+.row {
+
+	max-width: 1100px;
+	margin: 0 auto;
+
+}
+
+.row:after {
+	content: "";
+	display: block;
+	height: 0;
+	clear: both;
+}
+
+
+/*comienzo__de__cabecera_____________cabecera_____________*/
+
+
+header .submenu {
+
+	background-color: #21242e;
+	color: white;
+	padding: 20px 0px;
+}
+
+header .submenu i {
+	color: #fa573a;
+	padding-right: 10px;
+
+}
+
+
+header .submenu a:hover {
+
+	color: #fa573a;
+}
+
+header .submenu  .row div {
+
+	float: left;
+	width: 25%;
+}
+
+header .submenu .row div:nth-child(3), header .submenu .row div:nth-child(4) {
+text-align: right;
+
+}
+
+
+/*______________________________menu header_______________________________________*/
+
+header nav {
+	background-color: white;
+	padding: 20px 0px;
+
+
+}
+
+header nav .logo{
+
+	width: 100px;
+	height: auto;
+	float: left;
+}
+
+header nav .menu {
+
+	float: right;
+	padding-top: 5px;
+
+
+}
+
+header nav .menu li {
+
+	display: inline-block;
+	margin-right: 15px;
+}
+
+header nav li a {
+
+	color:#666;
+}
+
+header nav li a:hover {
+
+	color:#fa573a;
+}
+
+
+header nav li .activo {
+	color:#fa573a;
+
+
+}
+
+
+header.hamburguesa {
+	display: none;
+}
+
+/*______________hero___________________________*/
+
+.hero {
+
+	background-image: url("../images/fondo.jpg");
+	background-size: cover;
+	background-position: center center;
+	background-color: #444;
+	background-blend-mode: soft-light;
+	height: 550px;
+}
+
+.hero > div /*esto es un hijo directo*/ {
+  padding: 15% 10%;
+  color: white;
+
+}
+
+.hero > div h1 {
+
+font-size: 2em;
+font-family: "handlee", cursive;
+
+}
+
+.hero > div h2 {
+
+	color:#fa573a;
+	font-size: 1.25em;
+	margin: 0.8em 0%;
+}
+
+.hero .boton {
+
+	background-color: #fa573a;
+	border: 2px solid #fa573a;
+	padding: .9em;
+	display: inline-block;
+	margin: .8em 0%;
+}
+
+.hero .boton:hover {
+
+	background: transparent;
+	color: #fa573a
+}
+
+
+.hero .social {
+	display: flex;
+
+}
+
+.hero .social li {
+
+	margin-right: .7em;
+	font-size: 1.5em;
+}
+/*_______fin hero_______________________
+______comenzamos MAIN___________________________________________*/
+
+section {
+
+	padding: 50px 0px;
+
+}
+
+main section h2  {
+
+	color: black;
+	font-family: "handlee", cursive;
+	text-align: center;
+	font-size: 2em;
+
+
+}
+
+main section h2 span {
+
+	color: #fa573a;
+}
+
+main section .underlines {
+
+	position: relative;
+	width: 9.375em;
+	margin: 0 auto;
+	color: #fa573a;
+}
+
+main section .underlines hr {
+
+	border-color: #fa573a;
+}
+
+section .underlines span {
+	display: block;
+	font-weight: bold;
+	position: absolute;
+	top: -6px;
+	left: 67px;
+
+}
+
+main section .flex {
+
+	display: flex;
+	flex-wrap: wrap;  	 /* con wrap hay que especificar medidas*/
+	margin-top: 50px;
+
+
+}
+
+
+main section .flex article {
+
+	width: 33%;
+	border-left: 1px solid #ccc;
+	padding: 0px 25px;
+}
+
+main #ourservices article .icon {
+
+	color: #fa573a;
+	border: 2px solid #fa573a;
+	padding: 15px;
+}
+
+main #ourservices article h3 {
+
+	font-weight: bold;
+	margin: 10px 0px;
+	font-size: 15px 0px 120%;
+
+}
+
+main #ourservices article p {
+
+	color: #aaa ;
+}
+
+
+main .enlace{
+
+	color: #fa573a;
+	font-weight: bold;
+	margin: 20px 0px 0px 0px;
+	display: inline-block; /* como "a" es un elemento en linea, para ponerlo en bloque hay que variar el display de esta manera,
+	si no, no es posible meterle un margen, el margen es solo para elementos en bloque, nunca en linea*/
+
+}
+
+main .enlace i{ /*vuelta*/
+
+	margin-left: 0px;
+	transition: 1s;
+
+}
+
+main .enlace:hover i {  /*ida*/
+
+	margin-left: 5px;
+	transform: translate(10px);
+	
+}
+
+
+
+
+
+
+/*mediaquery____________________________________________________________
+_________________________________________________________________________*/
+
+
+
+@media(max-width: 768px) {
+
+header .submenu .row  div  {
+
+	font-size: 70%;
+	padding: 10px 10px;
+	text-align: center;
+
+} 
+header .submenu .row div:nth-child(3), header .submenu .row div:nth-child(4) {
+text-align: center; 
+
+}
+
+main section .flex article {
+	width: 50%;
+	margin-bottom: 40px;
+}
+main section .flex article:last-child{
+	width: 100%;
+	margin-bottom: 40px;
+
+}
+main section .flex article:first-child, main section .flex article:last-child {
+	border-left: 0px;
+
+}
+}
+
+
+
+
+
+
+
+/*  header submenu row div font size 85% 
+
+o  header .submenu .row div span span, header submenu .row div a span  ((PONER COMAS Y SEPARAR SE PUEDE))
+   //// atentos a la semantica de html5 */
+
+
+
+@media (max-width: 600px) {
+	
+header .submenu .row {
+
+	padding: 10px 0px;
+    font-size: 30px;
+}
+ 
+ header .submenu .row span {
+
+ 	/* font-size: 0px; */  display:none;
+
+ }
+ header nav {
+
+ 	padding-left: 10px;
+ 	padding-right: 10px;
+ }
+
+header .hamburguesa {
+	display: block;
+	float: right;
+	cursor: pointer;
+}
+
+header .hamburguesa .linea {
+
+	border-top: 2px solid #aaa;
+    width:  30px;
+    margin-bottom: 10px;
+
+
+}
+
+header nav .menu {
+	float:none;
+	padding-top: 60px;
+}
+
+header nav .menu li{
+  
+   display: block;
+   text-align: center;
+   padding: 20px;
+   border-bottom: 1px solid #aaa;
+
+}
+header nav .menu li:last-child {
+	border-bottom: 0px;
+}
+
+.hero {
+
+	height: 450px;
+}
+
+main section .flex article {
+	width: 100%;
+	border-left: 0px;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 20px;
+}
+
+
+
+}
+ 
+
+
+/* DEBERES 2 JULIO:  dos puntos de corte, uno más pequeño; otro solo con los iconos
+las mediaquerys son 778 para tabla bajo tamaño fuente, y 600 para quitarle el texto y dejar colo el icono*/
+
+
+
+
+
