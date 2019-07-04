@@ -146,8 +146,10 @@ header.hamburguesa {
 }
 
 .hero > div /*esto es un hijo directo*/ {
-  padding: 15% 10%;
+
+  padding: 15% 0%;
   color: white;
+  
 
 }
 
@@ -396,8 +398,11 @@ header nav .menu li{
    text-align: center;
    padding: 20px;
    border-bottom: 1px solid #aaa;
+   margin-right: 0px;
 
 }
+
+
 header nav .menu li:last-child {
 	border-bottom: 0px;
 }
@@ -415,10 +420,15 @@ main section .flex article {
 }
 
 
-
 }
  
+@media (max-width: 1100px) {
 
+	.hero> div {
+		padding:  15% 10px;
+	}
+	
+}
 
 /* DEBERES 2 JULIO:  dos puntos de corte, uno más pequeño; otro solo con los iconos
 las mediaquerys son 778 para tabla bajo tamaño fuente, y 600 para quitarle el texto y dejar colo el icono*/
