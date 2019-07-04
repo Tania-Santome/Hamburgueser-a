@@ -167,7 +167,7 @@ font-family: "handlee", cursive;
 	margin: 0.8em 0%;
 }
 
-.hero .boton {
+.boton {
 
 	background-color: #fa573a;
 	border: 2px solid #fa573a;
@@ -176,7 +176,7 @@ font-family: "handlee", cursive;
 	margin: .8em 0%;
 }
 
-.hero .boton:hover {
+.boton:hover {
 
 	background: transparent;
 	color: #fa573a
@@ -301,7 +301,49 @@ main .enlace:hover i {  /*ida*/
 	
 }
 
+main #aboutus .columna {
 
+	width: 50%;
+	padding: 15px;
+
+}
+
+main #aboutus .imagen .marco {
+
+	border: 3px solid #fa573a;
+	transform: rotateZ(10DEG);
+	transition: transform 1s;
+
+}
+
+main #aboutus .imagen .marco img {
+	transform: rotateZ(-10deg);
+	transition: transform 1s;
+	display: block;
+}
+
+
+
+main #aboutus .imagen:hover .marco {
+	transform: rotateZ(0deg);
+}
+
+main #aboutus .imagen:hover img {
+	transform: rotateZ(0deg);
+}
+
+main #aboutus h3 {
+
+	font-weight: bold;
+	font-size: 110%;
+
+}
+
+main #aboutus h4 {
+
+	color:  #fa573a;
+	margin: 10px 0px;
+}
 
 
 
@@ -419,6 +461,16 @@ main section .flex article {
 	padding-bottom: 20px;
 }
 
+main #aboutus .columna {
+
+	width: 100%;
+
+}
+
+main #aboutus .flex {
+
+	flex-direction: column-reverse;
+}
 
 }
  
